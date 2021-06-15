@@ -5,13 +5,8 @@
 - Joe Schmoe
 
 ## How to Contribute:
-### If you're not in the Python_Practice Discord:
-You have a few options. The best option is to join our community over on Discord. We're open to anyone looking to learn or improve their skills at Python. Otherwise, you're welcome to fork this repository and pull-request your changes, or open GitHub issues with requests or ideas for another contributor to do.
-### If you're in the Discord:
-First, make sure you've joined the GitHub Organization as a member. Next, contact a Moderator or Group Project Manager in Discord and ask them to add you to the Project Team. Once you're in, start voulenteering on issues you think you can do, and a Project Manager will assign you.
+First, if you're in the Discord, make sure that you've joined the GitHub organization. 
 
-To keep things organized, we ask that you wait for a Project Manager to assign you, then branch and begin working, instead of just changing code. (although you're welcome to fork the repository and do whatever you want to the fork, including pull-requesting back to this repository).
-### Important information for contributing:
-As stated above, **if you're not working on a fork of this repository**, we ask that you wait for a Project Manager to assign you, then branch and begin working, instead of just changing code.  
+If you'd like to  join the core project team, which we're limiting to 10 people, you can reach out to a project manager or moderator and request to join. This will be first-come first-serve, and we will remove inactive contributors from the team  periodically to make space for new comtributors.
 
-Please also ensure you are documenting your code well, making use of docustrings and comments, and you are following the PEP-8 style guide where applicable. 
+If the team is full, or if you don't want to join the core team, you are still welcome to fork the project repository, and create a pull request to merge your changes with the rest of the project.

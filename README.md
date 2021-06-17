@@ -19,7 +19,7 @@ directory.
 
 Find and replace the projects' name in these locations:
 
-* Find all instances of `REPLACEME` and replace them with the projects' name.
+* Find all instances of `replaceme` and replace them with the projects' name.
 * Change the name of `./src/project_template` to `./src/<project_name>`
 
 # Project Name

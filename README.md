@@ -2,6 +2,16 @@
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
+# Using this template
+
+The projects' name should be `lower_snake_case`. This should be the same name as the projects' root
+directory.
+
+Find and replace the projects' name in these locations:
+
+* Find all instances of `<REPLACE>` and replace them with the projects' name.
+* Change the name of `./src/project_template` to `./src/<project_name>`
+
 # Project Name
 
 **Brief Project Description Here**
@@ -99,7 +109,8 @@ using `make check` or on its own `mypy tests/ src/`.
 - Joe Schmoe
 
 # TODO
-finish docs
-clean up Makefile
-double check editor config
-double check git ignore
+
+* finish docs
+* clean up Makefile
+* double check editor config
+* double check git ignore

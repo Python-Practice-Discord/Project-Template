@@ -7,3 +7,4 @@ services:
     command: "/bin/bash"
     volumes:
       - .:/opt
+      - /opt/data/postgres

@@ -1,8 +1,6 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main, staging ]
 
@@ -26,6 +24,3 @@ jobs:
 
       - name: Run mypy in Docker
         run: docker run -t local:latest "mypy tests/ src/"
-
-      - name: Run tests in docker files
-        run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme

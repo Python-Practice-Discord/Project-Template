@@ -9,7 +9,8 @@ RUN chown -R default /opt
 
 USER default
 
-ENV PATH $PATH:/home/default/.local/bin
+ENV VIRTUAL_ENV=/opt/.venv
+ENV PATH "$VIRTUAL_ENV/bin:/home/default/.local/bin:$PATH"
 
 
 FROM base as builder
@@ -20,7 +21,7 @@ RUN poetry install
 
 FROM base as final
 
-COPY --chown=default:default --from=builder /opt/.venv /opt/.venv
+COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
 COPY --chown=default:default . .
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]

@@ -2,6 +2,14 @@
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
+# TODO
+
+* finish docs
+* clean up Makefile
+* double check editor config
+* double check git ignore
+* Add GitHub actions
+
 # Using this template
 
 The projects' name should be `lower_snake_case`. This should be the same name as the projects' root
@@ -108,9 +116,3 @@ using `make check` or on its own `mypy tests/ src/`.
 
 - Joe Schmoe
 
-# TODO
-
-* finish docs
-* clean up Makefile
-* double check editor config
-* double check git ignore

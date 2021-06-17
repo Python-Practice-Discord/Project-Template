@@ -36,14 +36,6 @@ repos:
         name: pytest
         stages: [ commit ]
         language: system
-        entry: ./.venv/bin/pytest
-        types: [ python ]
-        pass_filenames: false
-
-      - id: pytest-cov
-        name: pytest
-        stages: [ push ]
-        language: system
-        entry: ./.venv/bin/pytest --cov --cov-fail-under=100
+        entry: ./.venv/bin/pytest ./tests/unit
         types: [ python ]
         pass_filenames: false

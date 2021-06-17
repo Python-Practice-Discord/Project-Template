@@ -3,6 +3,9 @@ export
 env_file_name="local.env"
 UID="$(shell id -u)"
 
+init:
+	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+
 ### Commands to start docker containers and interact with them
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code
 interactive: _base

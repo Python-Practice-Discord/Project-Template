@@ -6,28 +6,28 @@ repos:
         name: isort
         stages: [ commit ]
         language: system
-        entry: isort
+        entry: ./.venv/bin/isort
         types: [ python ]
 
       - id: black
         name: black
         stages: [ commit ]
         language: system
-        entry: black
+        entry: ./.venv/bin/black --check
         types: [ python ]
 
       - id: flake8
         name: flake8
         stages: [ commit ]
         language: system
-        entry: flake8
+        entry: ./.venv/bin/flake8
         types: [ python ]
 
       - id: mypy
         name: mypy
         stages: [ commit ]
         language: system
-        entry: mypy tests/ src/
+        entry: ./.venv/bin/mypy tests/ src/
         types: [ python ]
         require_serial: true
         pass_filenames: false
@@ -36,7 +36,7 @@ repos:
         name: pytest
         stages: [ commit ]
         language: system
-        entry: pytest
+        entry: ./.venv/bin/pytest
         types: [ python ]
         pass_filenames: false
 
@@ -44,6 +44,6 @@ repos:
         name: pytest
         stages: [ push ]
         language: system
-        entry: pytest --cov --cov-fail-under=100
+        entry: ./.venv/bin/pytest --cov --cov-fail-under=100
         types: [ python ]
         pass_filenames: false

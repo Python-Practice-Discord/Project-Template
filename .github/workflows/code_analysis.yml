@@ -1,11 +1,11 @@
-name: Docker Image CI
+name: Code analysis
 
 on:
   pull_request:
     branches: [ main, staging ]
 
 jobs:
-  test:
+  code_analysis:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

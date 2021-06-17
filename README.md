@@ -6,10 +6,6 @@
 
 **Brief Project Description Here**
 
-#### Project Manager:
-
-- Joe Schmoe
-
 ## How to Contribute:
 
 First, if you're in the Discord, make sure that you've joined the GitHub organization.
@@ -22,31 +18,41 @@ If you can't get into the core team for whatever reason, or if you don't want to
 you are still welcome to fork the project repository, and create a pull request to merge your
 changes with the rest of the project.
 
+Please see the `Getting started` section of this readme for how to get this project up and running.
+
 ## Getting started
 
-You can work on this project using any OS, but macOS and Linux are supported with no changes. To
-use Windows you will need to be using WSL/WSL2 as many commands are not supported by the regular
-Windows CLI.
+You can work on this project using any OS, but macOS and Linux are easier. To use Windows you will
+need to be using WSL/WSL2 as many commands are not supported by the regular Windows CLI.
 
-### Set up your dev env
+There is a Makefile in the root of this project. It contains most of the commands you will need.
+These include
 
-All the project code is run in Docker and Docker-compose. This allows us to set up local databases,
-fake APIs and generally reflect the production environment.
+* `make interactive` which will drop you into a shell inside the projects' docker environment.
+* `make check` which will run a set of formatting and static analysis tools.
+* `make test` which will run all of our tests inside the projects' docker environment.
 
-We also use venv for pre-commit hooks and code formatting, linting, and static analysis.
+### Setting up your dev env
 
-#### Venv
+All the project code is run using Docker and Docker-compose. This allows us to set up local
+databases, fake APIs and generally reflect the production environment.
 
-Run the following steps to get your python venv setup and enable pre-commit.
+This project uses Poetry to lock, install, and serve our python dependencies both locally and in
+Docker.
 
-* `python3 -m venv ./venv`
-* `source venv/bin/activate`
-* `pip install -r ./requirements-pre-commit.txt`
+#### Local Poetry
+
+Run the following steps to get your local python env set up and enable pre-commit.
+
+* `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`
+* `poetry install`
+* `poetry shell`
 * `pre-commit install`
 
 #### Docker
 
-Follow these steps to get docker setup on your machine.
+Follow these steps to get docker setup on your machine and get into shell inside the docker
+environment.
 
 * [Install docker on your machine](https://docs.docker.com/get-docker/)
     * HINT: If on linux `curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh`
@@ -54,8 +60,46 @@ Follow these steps to get docker setup on your machine.
 * Run `make initialize_pg`
 * Run `make interactive`
 
-You now have a local postgres database with fake data, and the production schemas linked to your CLI.
+You now have a local postgres database with fake data, and the production schemas linked to your
+CLI.
 
 ## Code Best Practices
 
-This project uses the black formatter and Flake8 for code
+### Editors
+
+This project provides a .editorconfig file that tells your editor how to treat some files. This
+includes 4 spaces per tab in python files, no whitespace at the end of lines, and using lf as the
+new line character.
+
+### Linters and formatters.
+
+This project uses the isort, black formatter, and Flake8 to ensure everyone's code follows the same
+standards and best practices. The code standards are enforced on commit time via pre-commit and
+during pull requests via GitHub actions.
+
+These tools can be run outside of commit by running `make check` in your terminal. Running this can
+change your files.
+
+Black will automatically reformat your files, and isort will reorder your imports. This should never
+break your code, just change how it looks.
+
+Flake8 will check some python best practices and throw error messages if you have any.
+
+### Static analysis
+
+Mypy runs a some static analysis on python types to help avoid some common errors. Mypy can be run
+using `make check` or on its own `mypy tests/ src/`.
+
+## Team
+
+### Team lead
+
+### Project Manager
+
+- Joe Schmoe
+
+# TODO
+finish docs
+clean up Makefile
+double check editor config
+double check git ignore

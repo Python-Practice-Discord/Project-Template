@@ -9,6 +9,8 @@
 * double check editor config
 * double check git ignore
 * Add GitHub actions
+* Add git merging docs
+    * git process
 
 # Using this template
 

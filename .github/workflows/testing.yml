@@ -13,19 +13,19 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build the Docker image
-        run: docker-compose --env-file local.env build -q
+        run: docker build -t local:latest .
 
       - name: Run isort in Docker
-        run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme "isort --check tests/ src/"
+        run: docker run -it local:latest "isort --check tests/ src/"
 
       - name: Run black in Docker
-        run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme "black --check tests/ src/"
+        run: docker run -it local:latest "black --check tests/ src/"
 
       - name: Run flake8 in Docker
-        run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme "flake8 tests/ src/"
+        run: docker run -it local:latest "flake8 tests/ src/"
 
       - name: Run mypy in Docker
-        run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme "mypy tests/ src/"
+        run: docker run -it local:latest "mypy tests/ src/"
 
       - name: Run tests in docker files
         run: docker-compose --env-file local.env -f docker-compose.yaml -f docker-compose.test.yaml run --rm replaceme

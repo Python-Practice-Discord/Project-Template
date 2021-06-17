@@ -12,10 +12,10 @@ check:
 ### Commands to start docker containers and interact with them
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code
 interactive: _base
-	docker-compose --env-file $(env_file_name) -f docker-compose.yaml -f docker-compose.interactive.yaml run --rm <REPLACE>
+	docker-compose --env-file $(env_file_name) -f docker-compose.yaml -f docker-compose.interactive.yaml run --rm REPLACEME
 
 test: _base
-	docker-compose --env-file $(env_file_name) -f docker-compose.yaml -f docker-compose.test.yaml run --rm <REPLACE>
+	docker-compose --env-file $(env_file_name) -f docker-compose.yaml -f docker-compose.test.yaml run --rm REPLACEME
 
 # Just starts the postgres DB.
 db_only: _base
@@ -31,7 +31,7 @@ initialize_pg: _base _remove_all_pg_data run_migrations
 run_migrations: _down
 	docker-compose --env-file $(env_file_name) -f docker-compose.yaml up -d postgres
 	sleep 10
-	docker-compose --env-file $(env_file_name) -f docker-compose.yaml run --rm <REPLACE> alembic upgrade head
+	docker-compose --env-file $(env_file_name) -f docker-compose.yaml run --rm REPLACEME alembic upgrade head
 	$(MAKE) _down
 
 

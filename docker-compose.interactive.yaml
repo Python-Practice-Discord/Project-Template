@@ -1,7 +1,7 @@
 version: "3.8"
 services:
 
-  <REPLACE>:
+  REPLACEME:
     stdin_open: true
     tty: true
     command: "/bin/bash"

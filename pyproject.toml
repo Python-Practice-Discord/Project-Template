@@ -9,7 +9,7 @@ include = '\.pyi?$'
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--cov=<REPLACE> --cov-report term --cov-resport html"
+addopts = "--cov=REPLACEME --cov-report term --cov-resport html"
 testpaths = [
     "tests",
 ]

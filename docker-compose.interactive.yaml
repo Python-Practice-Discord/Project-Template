@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+
+  <REPLACE>:
+    stdin_open: true
+    tty: true
+    command: "/bin/bash"
+    volumes:
+      - .:/opt

@@ -1,0 +1,7 @@
+# TODO figure out how we should do dep management. Maybe poetry?
+-r ./requirements.txt
+-c ./requirements.txt
+
+ipdb
+pytest
+pylint

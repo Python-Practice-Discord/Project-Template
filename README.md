@@ -30,4 +30,8 @@ Find and replace the projects' name in these locations:
 
 **Brief Project Description Here**
 
+# Documentation
 
+To view all the available documentation for this project please see
+our [Documents Index](/docs/INDEX.md). This includes how to get started, our coding best practices,
+and more.

@@ -1,4 +1,4 @@
-# How to Contribute:
+# How to Contribute
 
 First, if you're in the Discord, make sure that you've joined the GitHub organization.
 
@@ -10,4 +10,6 @@ If you can't get into the core team for whatever reason, or if you don't want to
 you are still welcome to fork the project repository, and create a pull request to merge your
 changes with the rest of the project.
 
-Please see the `Getting started` section of this readme for how to get this project up and running.
+Please see the [Getting started developing](GETTING_STARTED_DEVELOPING.md) section of this readme for how to get this
+project up and running.
+

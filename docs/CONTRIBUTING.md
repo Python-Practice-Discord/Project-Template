@@ -1,5 +1,10 @@
 # How to Contribute
 
+There are many ways to contribute to this project.
+* [Finding and submitting bugs](TICKETS.md#submitting-bugs)
+* [Working open tickets](TICKETS.md)
+* [Adding documentation](DOCUMENTATION.md)
+
 First, if you're in the Discord, make sure that you've joined the GitHub organization.
 
 If you'd like to join the core project team, which we're limiting to 10 people, you can reach out to

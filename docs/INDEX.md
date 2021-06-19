@@ -4,11 +4,15 @@
 
 # Docs for Project Contributors
 
-[Contribution guidelines for this project](./CONTRIBUTING.md)
+[Contribution guidelines for this project](CONTRIBUTING.md)
 
 [Getting started developing this project](GETTING_STARTED_DEVELOPING.md)
 
-[Development Best practices](DEVELOPMENT_BEST_PRACTICES.md)
+[Development best practices](DEVELOPMENT_BEST_PRACTICES.md)
+
+[Writing docs](DOCUMENTATION.md)
+
+[Tickets](TICKETS.md)
 
 # General Information
 
@@ -20,4 +24,4 @@
 
 [License](../LICENSE)
 
-[Team](./TEAM.md)
+[Team](TEAM.md)

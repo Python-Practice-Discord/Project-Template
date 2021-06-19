@@ -28,6 +28,8 @@ Find and replace the projects' name in these locations:
 
 # Project Name
 
+This project is run by the [Python Practice](https://discord.gg/Zp8CBHvudz) Discord community.
+
 **Brief Project Description Here**
 
 # How to use this project as a non contributor

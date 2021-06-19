@@ -30,6 +30,10 @@ Find and replace the projects' name in these locations:
 
 **Brief Project Description Here**
 
+# How to use this project as a non contributor
+
+If it is a package then how to use/install
+
 # Documentation
 
 To view all the available documentation for this project please see

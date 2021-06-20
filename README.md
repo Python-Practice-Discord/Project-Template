@@ -17,6 +17,8 @@ Find and replace the projects' name in these locations:
         * require review from code owner
     * Require conversation resolution before merging
     * Require branches to be up to date before merging
+* Add project description in README.md
+* Add usage instructions in README.md
 
 # Project Name
 

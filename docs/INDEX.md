@@ -1,27 +1,25 @@
-# General Docs
-
-[Readme](../README.md)
+### [Readme](../README.md)
 
 # Docs for Project Contributors
 
-[Contribution guidelines for this project](CONTRIBUTING.md)
+### [Contribution guidelines for this project](CONTRIBUTING.md)
 
-[Getting started developing this project](GETTING_STARTED_DEVELOPING.md)
+### [Getting started developing this project](GETTING_STARTED_DEVELOPING.md)
 
-[Development best practices](DEVELOPMENT_BEST_PRACTICES.md)
+### [Development best practices](DEVELOPMENT_BEST_PRACTICES.md)
 
-[Writing docs](DOCUMENTATION.md)
+### [Writing docs](DOCUMENTATION.md)
 
-[Tickets](TICKETS.md)
+### [Tickets](TICKETS.md)
 
 # General Information
 
-[Code of Conduct](../CODE_OF_CONDUCT.md)
+### [Code of Conduct](../CODE_OF_CONDUCT.md)
 
-[Authors](../AUTHORS.rst)
+### [Authors](../AUTHORS.rst)
 
-[Changelog](../CHANGELOG.rst)
+### [Changelog](../CHANGELOG.rst)
 
-[License](../LICENSE)
+### [License](../LICENSE)
 
-[Team](TEAM.md)
+### [Team](TEAM.md)

@@ -2,14 +2,6 @@
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
-# TODO
-
-* finish docs
-* clean up Makefile
-* double check editor config
-* Add git merging docs
-    * git process
-
 # Using this template
 
 The projects' name should be `lower_snake_case`. This should be the same name as the projects' root

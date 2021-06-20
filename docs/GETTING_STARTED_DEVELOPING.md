@@ -1,6 +1,6 @@
 # Getting started
 
-You can work on this project using any OS, but macOS and Linux are easier. To use Windows you will
+You can work on this project using any OS, but macOS and Linux are easiest. To use Windows you will
 need to be using WSL/WSL2 as many commands are not supported by the regular Windows CLI.
 
 There is a Makefile in the root of this project. It contains most of the commands you will need.
@@ -10,13 +10,16 @@ These include
 * `make check` which will run a set of formatting and static analysis tools.
 * `make test` which will run all of our tests inside the projects' docker environment.
 
-## Setting up your dev env
+## Setting up Your Dev Env
 
-All the project code is run using Docker and Docker-compose. This allows us to set up local
-databases, fake APIs and generally reflect the production environment.
+This project uses Docker and Docker-compose. This allows us to set up local databases, fake APIs and
+generally reflect the production environment.
 
 This project uses Poetry to lock, install, and serve our python dependencies both locally and in
 Docker.
+
+There are two parts of your environment. A local python installation (managed by poetry), and an
+environment run inside of Docker containers (orchestrated by docker-compose and the Makefile)
 
 ### Local Poetry
 

@@ -2,7 +2,7 @@
 
 There are many ways to contribute to this project.
 * [Finding and submitting bugs](TICKETS.md#submitting-bugs)
-* [Working open tickets](TICKETS.md)
+* [Working open tickets](TICKETS.md#working-a-ticket)
 * [Adding documentation](DOCUMENTATION.md)
 
 First, if you're in the Discord, make sure that you've joined the GitHub organization.

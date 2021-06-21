@@ -1,15 +1,37 @@
-# Project Name 
+<p align="center">
+    <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
+
+# Using this template
+
+The projects' name should be `lower_snake_case`. This should be the same name as the projects' root
+directory.
+
+Find and replace the projects' name in these locations:
+
+* Find all instances of `replaceme` and replace them with the projects' name.
+* Change the name of `./src/project_template` to `./src/<project_name>`
+* Change Github setting for the new repo
+    * Protect the main and staging branches with both actions.
+    * Require pull request reviews before merging
+        * require review from code owner
+    * Require conversation resolution before merging
+    * Require branches to be up to date before merging
+* Add project description in README.md
+* Add usage instructions in README.md
+
+# Project Name
+
+This project is run by the [Python Practice](https://discord.gg/Zp8CBHvudz) Discord community.
+
 **Brief Project Description Here**
 
-#### Project Manager:
-- Joe Schmoe
+# How to use this project as a non contributor
 
-## How to Contribute:
-First, if you're in the Discord, make sure that you've joined the GitHub organization. 
+If it is a package then how to use/install
 
-If you'd like to  join the core project team, which we're limiting to 10 people, you can reach out to a project manager or moderator and request to join. This will be first-come first-serve, and we will remove inactive contributors from the team  periodically to make space for new contributors.
+# Documentation
 
-If you can't get into the core team for whatever reason, or if you don't want to join the core team, you are still welcome to fork the project repository, and create a pull request to merge your changes with the rest of the project.
-
-## Code Best Practices
-We're waiting on PeterHoburg for this.
+To view all the available documentation for this project please see
+our [Documents Index](/docs/INDEX.md). This includes how to get started, our coding best practices,
+and more.

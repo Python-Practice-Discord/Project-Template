@@ -9,9 +9,9 @@ directory.
 
 Find and replace the projects' name in these locations:
 
-* Find all instances of `replaceme` and replace them with the projects' name.
+* Find all instances of `replaceme` and `Project Name` and replace them with the projects' name.
 * Change the name of `./src/project_template` to `./src/<project_name>`
-* Change Github setting for the new repo
+* Change Github settings for the new repo:
     * Protect the main and staging branches with both actions.
     * Require pull request reviews before merging
         * require review from code owner
@@ -28,7 +28,7 @@ This project is run by the [Python Practice](https://discord.gg/Zp8CBHvudz) Disc
 
 # How to use this project as a non contributor
 
-If it is a package then how to use/install
+Add usage and/or installation instructions here, as stated in "Using this Template"
 
 # Documentation
 

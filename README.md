@@ -16,6 +16,10 @@ directory.
         * require review from code owner
     * Require conversation resolution before merging
     * Require branches to be up to date before merging
+    * Configure repository access:
+       * Base access level for organization members should be `Read`
+       * Group Project Team Leads should have `Maintain` permissions
+       * The Project Team should have `Write` permissions
 * Add project description in README.md
 * Add usage instructions in README.md
 

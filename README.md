@@ -7,16 +7,19 @@
 The projects' name should be `lower_snake_case`. This should be the same name as the projects' root
 directory.
 
-Find and replace the projects' name in these locations:
-
-* Find all instances of `replaceme` and replace them with the projects' name.
-* Change the name of `./src/project_template` to `./src/<project_name>`
-* Change Github setting for the new repo
+* Find all instances of `replaceme` or `project name` and replace them with the project's name in these locations:
+    * Change the name of `./src/project_template` to `./src/<project_name>`
+    * README.md
+* Change Github settings for the new repo:
     * Protect the main and staging branches with both actions.
     * Require pull request reviews before merging
         * require review from code owner
     * Require conversation resolution before merging
     * Require branches to be up to date before merging
+    * Configure repository access:
+       * Base access level for organization members should be `Read`
+       * Group Project Team Leads should have `Maintain` permissions
+       * The Project Team should have `Write` permissions
 * Add project description in README.md
 * Add usage instructions in README.md
 
@@ -28,7 +31,7 @@ This project is run by the [Python Practice](https://discord.gg/Zp8CBHvudz) Disc
 
 # How to use this project as a non contributor
 
-If it is a package then how to use/install
+Add usage and/or installation instructions here, as stated in "Using this Template"
 
 # Documentation
 

@@ -26,7 +26,7 @@ features, and eventually, closing the ticket.
 
 ## Labels
 It is important that each new ticket has the correct labels applied to it. This makes it easier
-for contributors to quickly search through for related tickets, or for things to work on.
+for contributors to quickly search through for related tickets, or find issues to work on.
 
 This project's ticket labels are as follows:
 - `documentation`

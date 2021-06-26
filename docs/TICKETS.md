@@ -1,5 +1,5 @@
 # Tickets
-This project uses of GitHub Issues for tracking and managing tasks.
+This project uses GitHub Issues for tracking and managing tasks.
 
 # Submitting Tickets
 Submitting tickets is an easy way to contribute to the project, with no programming skills required.
@@ -14,7 +14,7 @@ If you discover a bug in the project, or you would like to have a feature added 
 please submit a bug report or a feature request.
 
 To submit a bug report or feature request, go to the "Issues" tab in the repository,
-and click "New Issue". Then, select the Bug Report template or the feature request template.
+and click "New Issue". Then, select the Bug Report template or the Feature Request template.
 
 Make sure you include as much of the requested information as you have, since it makes it much
 easier for contributors to investigate.
@@ -42,7 +42,7 @@ This project's ticket labels are as follows:
 - `invalid`
     - A ticket that contains generally invalid or false information, like a bug report that can't
       be validated, a feature request for a feature that already exists.
-- `triageed`
+- `triaged`
     - Tickets that have been confirmed and will be implemented into the project.
     - Only the Team Lead should apply the `triaged` label to a ticket.
 - `help wanted`

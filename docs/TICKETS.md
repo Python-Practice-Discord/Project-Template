@@ -61,7 +61,7 @@ This project's ticket labels are as follows:
 ## Assigning and Picking Up Tickets
 ### Core Team Members:
 Once a ticket is marked as `triaged`, if you'd like to pick up the ticket to work on implementing it,
-you can assign themselves to the ticket. Do this by clicking the 'assignees' button at the top right,
+you can assign yourself to the ticket. Do this by clicking the 'assignees' button at the top right,
 and selecting yourself.
 
 Make sure that nobody has already assigned themselves before assigning yourself or beginning work,

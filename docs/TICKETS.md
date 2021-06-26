@@ -21,7 +21,7 @@ easier for contributors to investigate.
 
 # Working a Ticket
 Members of the Core team, and the Team Lead should "work" each ticket submitted, by applying the
-proper labels, gathering information, answering questions, and eventually, implementing new
+proper labels, gathering information, answering questions, implementing new
 features, and eventually, closing the ticket.
 
 ## Labels

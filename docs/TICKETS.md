@@ -43,7 +43,7 @@ This project's ticket labels are as follows:
     - A ticket that contains generally invalid or false information, like a bug report that can't
       be validated, a feature request for a feature that already exists.
 - `triageed`
-    - Tickets that have been confirmed to be implemented into the project.
+    - Tickets that have been confirmed and will be implemented into the project.
     - Only the Team Lead should apply the `triaged` label to a ticket.
 - `help wanted`
     - Tickets that can be picked up by a contributor outside the core team.

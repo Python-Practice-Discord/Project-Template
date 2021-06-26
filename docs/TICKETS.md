@@ -76,7 +76,7 @@ Make sure that nobody has asked to be assigned or already been assigned before y
 to prevent multiple people opening a pull request over the same thing.
 
 ## Closing Tickets
-Tickets should be closed under the issues raised are resolved. This means:
+The criteria for ticket closure is as follows:
 - The ticket is a duplicate, has been labeled as `duplicate`, and the original has been linked.
 - The bugfix, feature, or documentation improvement requested will not be implemented, and the
   ticket has been labeled as `wontfix` by the Team Lead.

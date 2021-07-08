@@ -9,7 +9,7 @@ RUN chown -R default /opt
 
 USER default
 
-ENV VIRTUAL_ENV=/opt/.venv
+ENV VIRTUAL_ENV="/home/default/.cache/pypoetry/virtualenvs"
 ENV PATH "$VIRTUAL_ENV/bin:/home/default/.local/bin:$PATH"
 
 
@@ -23,7 +23,6 @@ FROM base as final
 
 COPY --chown=default:default . .
 COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
-COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "/home/default/.venv"
 
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]

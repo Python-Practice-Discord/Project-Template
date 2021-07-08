@@ -5,10 +5,10 @@ UID="$(shell id -u)"
 .PHONY: check interactive test db_only initialize_pg run_migrations kill_all_containers remove_all_docker_data _build _down _base _remove_all_pg_data _insert_pg_data
 
 check:
-	./.venv/bin/isort tests/ src/
-	./.venv/bin/black tests/ src/
-	./.venv/bin/flake8 tests/ src/
-	./.venv/bin/mypy tests/ src/
+	poetry run isort tests/ src/
+	poetry run black tests/ src/
+	poetry run flake8 tests/ src/
+	poetry run mypy tests/ src/
 
 ### Commands to start docker containers and interact with them
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code

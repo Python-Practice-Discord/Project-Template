@@ -1,4 +1,4 @@
-FROM python@sha256:e8e000f3c551f93d7b03d241e38c1206eb8c8a1f1a6179902f74e068fc98ee59 as base
+FROM python@sha256:22d67fbf4849f06491933f273526e425342b210e9c8b90052708c09a00f6154f as base
 
 WORKDIR /opt
 
@@ -9,7 +9,7 @@ RUN chown -R default /opt
 
 USER default
 
-ENV VIRTUAL_ENV=/opt/.venv
+ENV VIRTUAL_ENV="/home/default/.cache/pypoetry/virtualenvs"
 ENV PATH "$VIRTUAL_ENV/bin:/home/default/.local/bin:$PATH"
 
 
@@ -21,8 +21,9 @@ RUN poetry install
 
 FROM base as final
 
-COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
 COPY --chown=default:default . .
+COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
+
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
 CMD ["python", "src/project_template/main.py"]

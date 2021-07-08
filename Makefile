@@ -2,12 +2,13 @@ include local.env
 export
 env_file_name="local.env"
 UID="$(shell id -u)"
+.PHONY: check interactive test db_only initialize_pg run_migrations kill_all_containers remove_all_docker_data _build _down _base _remove_all_pg_data _insert_pg_data
 
 check:
-	isort tests/ src/
-	black tests/ src/
-	flake8 tests/ src/
-	mypy tests/ src/
+	./.venv/bin/isort tests/ src/
+	./.venv/bin/black tests/ src/
+	./.venv/bin/flake8 tests/ src/
+	./.venv/bin/mypy tests/ src/
 
 ### Commands to start docker containers and interact with them
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code
@@ -29,8 +30,6 @@ initialize_pg: _base _remove_all_pg_data run_migrations
 	$(MAKE) _down
 
 run_migrations: _down
-	docker-compose --env-file $(env_file_name) -f docker-compose.yaml up -d postgres
-	sleep 10
 	docker-compose --env-file $(env_file_name) -f docker-compose.yaml run --rm replaceme alembic upgrade head
 	$(MAKE) _down
 

@@ -8,7 +8,14 @@ jobs:
   code_analysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+#      - name: Cache docker image
+#        id: docker-image
+#        uses: actions/cache@2.1.6
+#        with:
+#          path: ${{github.workspace}}/var/lib/docker/overlay2
 
       - name: Build the Docker image
         run: docker build -t local:latest .

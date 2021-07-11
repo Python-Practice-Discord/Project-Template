@@ -17,7 +17,11 @@ FROM base as builder
 
 RUN pip install poetry
 COPY --chown=default:default poetry.lock poetry.toml pyproject.toml ./
-RUN poetry install
+
+ARG NO_DEV="-v"
+
+RUN poetry install --remove-untracked "$NO_DEV"
+
 
 FROM base as final
 

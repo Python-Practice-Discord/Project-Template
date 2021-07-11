@@ -1,4 +1,4 @@
-name: Code analysis
+name: "Python Analysis"
 
 on:
   pull_request:
@@ -8,7 +8,14 @@ jobs:
   code_analysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+#      - name: Cache docker image
+#        id: docker-image
+#        uses: actions/cache@2.1.6
+#        with:
+#          path: ${{github.workspace}}/var/lib/docker/overlay2
 
       - name: Build the Docker image
         run: docker build -t local:latest .
@@ -23,4 +30,4 @@ jobs:
         run: docker run -t local:latest "flake8 tests/ src/"
 
       - name: Run mypy in Docker
-        run: docker run -t local:latest "mypy tests/ src/"
+        run: docker run -t local:latest "mypy --namespace-packages tests/ src/"

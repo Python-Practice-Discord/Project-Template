@@ -8,7 +8,7 @@ check:
 	poetry run isort tests/ src/
 	poetry run black tests/ src/
 	poetry run flake8 tests/ src/
-	poetry run mypy tests/ src/
+	poetry run mypy --namespace-packages tests/ src/
 
 ### Commands to start docker containers and interact with them
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code

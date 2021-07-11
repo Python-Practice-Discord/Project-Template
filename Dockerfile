@@ -16,14 +16,23 @@ ENV PATH "$VIRTUAL_ENV/bin:/home/default/.local/bin:$PATH"
 FROM base as builder
 
 RUN pip install poetry
-COPY --chown=default:default poetry.lock poetry.toml pyproject.toml ./
-RUN poetry install
+COPY --chown=default:default poetry.lock pyproject.toml ./
+
+ARG NO_DEV="-v"
+
+RUN poetry install --remove-untracked "$NO_DEV"
+
 
 FROM base as final
 
 COPY --chown=default:default . .
 COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
 
+ARG DEBUG="true"
+ENV DEBUG=$DEBUG
+
+ARG ENVIRONMENT="local"
+ENV ENVIRONMENT=$ENVIRONMENT
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
 CMD ["python", "src/project_template/main.py"]

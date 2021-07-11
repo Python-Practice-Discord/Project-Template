@@ -28,6 +28,11 @@ FROM base as final
 COPY --chown=default:default . .
 COPY --chown=default:default --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
 
+ARG DEBUG="true"
+ENV DEBUG=$DEBUG
+
+ARG ENVIRONMENT="local"
+ENV ENVIRONMENT=$ENVIRONMENT
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
 CMD ["python", "src/project_template/main.py"]

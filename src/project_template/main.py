@@ -1,4 +1,4 @@
-import config
+from project_template import config
 
 
 def main():

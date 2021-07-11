@@ -16,7 +16,7 @@ ENV PATH "$VIRTUAL_ENV/bin:/home/default/.local/bin:$PATH"
 FROM base as builder
 
 RUN pip install poetry
-COPY --chown=default:default poetry.lock poetry.toml pyproject.toml ./
+COPY --chown=default:default poetry.lock pyproject.toml ./
 
 ARG NO_DEV="-v"
 

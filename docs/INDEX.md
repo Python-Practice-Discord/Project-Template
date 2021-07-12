@@ -12,6 +12,18 @@
 
 ### [Tickets](TICKETS.md)
 
+### [Secrets](SECRETS.md)
+
+# Docs for the Project Lead
+
+### [Project lead doc](PROJECT_LEAD.md)
+
+### [Sentry IO](SENTRY.md)
+
+### [Heroku](HEROKU.md)
+
+### [Secrets](SECRETS.md)
+
 # General Information
 
 ### [Code of Conduct](../CODE_OF_CONDUCT.md)

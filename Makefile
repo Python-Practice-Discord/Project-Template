@@ -2,7 +2,7 @@ include local.env
 export
 env_file_name="local.env"
 UID="$(shell id -u)"
-.PHONY: check interactive test db_only initialize_pg run_migrations kill_all_containers remove_all_docker_data _build _down _base _remove_all_pg_data _insert_pg_data
+.PHONY: check run interactive test db_only initialize_pg run_migrations kill_all_containers remove_all_docker_data _build _down _base _remove_all_pg_data _insert_pg_data
 
 check:
 	poetry run isort tests/ src/
@@ -11,6 +11,9 @@ check:
 	poetry run mypy --namespace-packages tests/ src/
 
 ### Commands to start docker containers and interact with them
+
+run: _base
+	docker-compose --env-file $(env_file_name) -f docker-compose.yaml run --rm replaceme
 # Starts a shell in the Dockerfile. This is used to run migrations or other commands in the same env as the code
 interactive: _base
 	docker-compose --env-file $(env_file_name) -f docker-compose.yaml -f docker-compose.interactive.yaml run --rm replaceme

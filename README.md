@@ -7,7 +7,8 @@
 The projects' name should be `lower_snake_case`. This should be the same name as the projects' root
 directory.
 
-* Find all instances of `replaceme` or `project name` and replace them with the project's name in these locations:
+* Find all instances of `replaceme` or `project name` and replace them with the project's name in
+  these locations:
     * Change the name of `./src/project_template` to `./src/<project_name>`
     * README.md
 * Change Github settings for the new repo:
@@ -17,11 +18,13 @@ directory.
     * Require conversation resolution before merging
     * Require branches to be up to date before merging
     * Configure repository access:
-       * Base access level for organization members should be `Read`
-       * Group Project Team Leads should have `Maintain` permissions
-       * The Project Team should have `Write` permissions
+        * Base access level for organization members should be `Read`
+        * Group Project Team Leads should have `Maintain` permissions
+        * The Project Team should have `Write` permissions
 * Add project description in README.md
 * Add usage instructions in README.md
+* Run through [Sentry Init](docs/SECRETS.md#init)
+* Run through [Heroku Init](docs/HEROKU.md#init)
 
 # Project Name
 

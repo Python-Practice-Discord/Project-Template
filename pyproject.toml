@@ -33,6 +33,9 @@ include = '\.pyi?$'
 
 [tool.mypy]
 plugins = "sqlalchemy.ext.mypy.plugin"
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src/project_template:$MYPY_CONFIG_FILE_DIR/tests"
+namespace_packages = true
+explicit_package_bases = true
 
 [tool.isort]
 profile = "black"

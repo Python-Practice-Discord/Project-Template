@@ -8,7 +8,7 @@ check:
 	poetry run isort tests/ src/
 	poetry run black tests/ src/
 	poetry run flake8 tests/ src/
-	poetry run mypy --namespace-packages tests/ src/
+	poetry run mypy tests/ src/
 
 ### Commands to start docker containers and interact with them
 

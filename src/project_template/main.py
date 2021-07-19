@@ -1,8 +1,6 @@
 import config
-from utils.log import log
+from utils.logger import log
 
-
-# TODO figure out why the package is working some times and not others `import project_template....`
 
 def main():
     log.info("Hello world")

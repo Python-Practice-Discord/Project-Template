@@ -24,7 +24,7 @@ directory.
 * Add project description in README.md
 * Add usage instructions in README.md
 * Run through [Sentry Init](docs/SENTRY.md#init)
-* Run through [Heroku Init](docs/HEROKU.md#init)
+* Run through [Heroku Init](docs/cloud_providers/HEROKU.md#init)
 
 # Project Name
 

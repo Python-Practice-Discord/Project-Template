@@ -20,7 +20,9 @@
 
 ### [Sentry IO](SENTRY.md)
 
-### [Heroku](HEROKU.md)
+### [Deployment](DEPLOYMENT.md)
+
+### [Heroku](cloud_providers/HEROKU.md)
 
 ### [Secrets](SECRETS.md)
 
